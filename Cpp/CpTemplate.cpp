@@ -1,7 +1,6 @@
 /* created by <xrssa> */
-#pragma GCC optimize("O3","unroll-loops","omit-frame-pointer","inline") //Optimization flags
-#pragma GCC option("arch=native","tune=native","no-zero-upper") //Enable AVX
-#pragma GCC target("avx")  //Enable AVX
+#pragma GCC optimize("O3","unroll-loops","omit-frame-pointer","inline","fast-math","no-stack-protector") //Optimization flags
+#pragma GCC target("sse,sse2,sse3,ssse3,popcnt,abm,mmx,tune=native")
 #include <x86intrin.h> //AVX/SSE Extensions
 
 #include <bits/stdc++.h>
@@ -20,6 +19,13 @@ using namespace __gnu_pbds;
 #define all(a)           a.begin(),a.end()
 #define INF 1e9 // # define INF 0x3f3f3f3f 
 #define EPS 1e-6
+
+/*
+int dp[31], n;
+memset(dp, 0, sizeof(dp));
+dp[0]=1;
+dp[2]=3;
+*/
 
 void debug_out() { cerr << endl; }
 
