@@ -9,7 +9,7 @@ int main()
 {
     ll int n;
     cin >> n;
-
+    // use 1 to get all
     for(ll i = 2;  i <= sqrt(n); i++)
     {
         if (n%i==0)
