@@ -46,3 +46,15 @@ int main()
 
     return 0;
 }
+/*
+arr = [(x,y),(x1,y1)]
+def area(arr):
+    arr.append(arr[0])
+    print(arr)
+    area=0.0
+    for i in range(0,len(arr)-1):
+        area+=arr[i][0]*arr[i+1][1]
+        area-=arr[i][1]*arr[i+1][0]
+    return 0.5*area
+
+ */
